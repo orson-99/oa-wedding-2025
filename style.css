@@ -1,0 +1,133 @@
+/* Custom styles to replace the Rails asset pipeline CSS */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff;
+}
+
+p {
+  size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  color: #343434;
+}
+.bg-peach {
+  background-color: #fff5f0;
+}
+
+.text-penn-red {
+  color: #9e1316;
+}
+
+.bg-myrtle-green {
+  background-color: #317873;
+}
+
+.text-te-papa-green {
+  color: #1e434c;
+}
+
+.text-white-smoke {
+  color: #f5f5f5;
+}
+
+.contact-us-gradient-background {
+  background: linear-gradient(135deg, #317873 0%, #1e434c 100%);
+}
+
+.highlight-gradient {
+  background: linear-gradient(90deg, #9e1316 0%, #1e434c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.quintessential-font {
+  font-family: 'Quintessential', cursive;
+}
+
+.great-vibes-font {
+  font-family: 'Great Vibes', cursive;
+}
+
+.playfair-display-font {
+  font-family: 'Playfair Display', serif;
+}
+
+.ovo-font {
+  font-family: 'Ovo', serif;
+}
+
+.background-image {
+  background-image: url('images/pre-wedding/AO-cover-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container-0 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-track-0 {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.carousel-item-0 {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  margin-right: 10px;
+}
+
+.sound-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #317873;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.underline-target {
+  position: relative;
+}
+
+.underline-target::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #9e1316;
+  transition: width 0.5s ease;
+}
+
+.animate-underline::after {
+  width: 100%;
+}
+
+.fade-quote {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f5f5f5);
+  margin-bottom: 10px;
+}
