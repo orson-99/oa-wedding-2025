@@ -66,20 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
     checkVisibility();
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const quoteSection = document.getElementById('quote-section');
-    
-    function checkScroll() {
-        const rect = quoteSection.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.7) {
-            quoteSection.classList.add('visible');
-        }
-    }
-    
-    window.addEventListener('scroll', checkScroll);
-    window.addEventListener('load', checkScroll);
-});
-
 document.querySelectorAll('[data-aos="fade"]').forEach(el => {
     el.setAttribute('data-aos-duration', '2000');
     el.setAttribute('data-aos-delay', '300');
