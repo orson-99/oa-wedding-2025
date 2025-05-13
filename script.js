@@ -143,3 +143,15 @@ soundButton.addEventListener('click', function() {
     }
     isMuted = !isMuted;
 });
+
+function initAudioOnFirstInteraction() {
+    sound.play(); // now allowed
+    window.removeEventListener('scroll', initAudioOnFirstInteraction);
+    window.removeEventListener('touchstart', initAudioOnFirstInteraction);
+    window.removeEventListener('click', initAudioOnFirstInteraction);
+  }
+
+  // Listen to first user gesture
+  window.addEventListener('scroll', initAudioOnFirstInteraction, { once: true });
+  window.addEventListener('touchstart', initAudioOnFirstInteraction, { once: true });
+  window.addEventListener('click', initAudioOnFirstInteraction, { once: true });
