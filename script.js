@@ -117,7 +117,7 @@ function animate() {
 animate();
 
 const weddingMusic = new Howl({
-  src: ['https://www.bensound.com/bensound-music/bensound-romantic.mp3'], // Replace with your MP3 URL
+  src: ["music/wed-site-music.mp3"], // Replace with your MP3 URL
   autoplay: true,
   loop: true,
   volume: 0.5
